@@ -1,0 +1,1 @@
+export default (formRef, $refs) => Object.keys(formRef).reduce((val, f) => val && $refs[f].validate(true), true)
